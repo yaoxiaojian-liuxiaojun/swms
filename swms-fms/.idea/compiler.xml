@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="swms-auth-server" />
+        <module name="swms-fms" />
       </profile>
     </annotationProcessing>
   </component>

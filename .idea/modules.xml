@@ -3,6 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/swms.iml" filepath="$PROJECT_DIR$/swms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swms-aus/swms-aus.iml" filepath="$PROJECT_DIR$/swms-aus/swms-aus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swms-cms/swms-cms.iml" filepath="$PROJECT_DIR$/swms-cms/swms-cms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swms-dms/swms-dms.iml" filepath="$PROJECT_DIR$/swms-dms/swms-dms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swms-fms/swms-fms.iml" filepath="$PROJECT_DIR$/swms-fms/swms-fms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swms-gws/swms-gws.iml" filepath="$PROJECT_DIR$/swms-gws/swms-gws.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swms-ses/swms-ses.iml" filepath="$PROJECT_DIR$/swms-ses/swms-ses.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swms-tps/swms-tps.iml" filepath="$PROJECT_DIR$/swms-tps/swms-tps.iml" />
     </modules>
   </component>
 </project>

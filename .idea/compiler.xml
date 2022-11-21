@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="swms-dms" />
+        <module name="swms-cms" />
+        <module name="swms-tps" />
+        <module name="swms-gws" />
+        <module name="swms-ses" />
+        <module name="swms-aus" />
+        <module name="swms-fms" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="swms-aus" target="8" />
+      <module name="swms-auth-server" target="8" />
+      <module name="swms-cms" target="8" />
+      <module name="swms-dms" target="8" />
+      <module name="swms-fms" target="8" />
+      <module name="swms-gateway" target="8" />
+      <module name="swms-gws" target="8" />
+      <module name="swms-seach" target="8" />
+      <module name="swms-ses" target="8" />
+      <module name="swms-tps" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

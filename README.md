@@ -2,15 +2,15 @@
 
 # 模块介绍
 
-| 模块名           | 模块中文名     | 描述                                                   |
-| ---------------- | -------------- | ------------------------------------------------------ |
-| swms-auth-server | 认证服务       | 社交登录、Oauth2.0、单点登录                           |
-| swms-common      | 公共模块       | 保存常量、异常码、工具类、通用实体等                    |
-| swms-gateway     | 网关模块       | 网关接收前端请求做统一转发                              |
-| swms-search      | 搜索服务       | Elasticsearch 操作服务                                 |
-| swms-third-party | 第三方整合服务 | 第三方服务、阿里云OSS等                                |
-| renren-fast      | 人人后台生成   | [人人开源](https://gitee.com/renrenio) 后端快速开发平台 |
-| renren-fast-vue  | 后台管理前端   | [人人开源](https://gitee.com/renrenio) 前端快速开发平台 |
+| 模块名      | 模块中文名   | 描述                 |
+|----------|---------|--------------------|
+| swms-aus | 认证服务    | 社交登录、Oauth2.0、单点登录 |
+| swms-cms | 公共模块    | 统计服务               |
+| swms-gws | 网关模块    | 网关接收前端请求做统一转发      |
+| swms-ses | 搜索服务    | Elasticsearch 操作服务 |
+| swms-tps | 第三方整合服务 | 第三方服务              |
+| swms-dms | 设备管理服务  | 设备管理               |
+| swms-fms | 文件管理服务  | 文件管理               |
 
 # 端口规划
 
@@ -22,12 +22,12 @@
 
 # 端口描述
 
-| 服务               | 服务描述    | 端口                                          |
-|------------------|---------|---------------------------------------------|
-| swms-auth-server | 认证服务    | 社交登录、Oauth2.0、单点登录                          |
-| swms-common      | 公共模块    | 保存常量、异常码、工具类、通用实体等                          |
-| swms-gateway     | 网关模块    | 网关接收前端请求做统一转发                               |
-| swms-search      | 搜索服务    | Elasticsearch 操作服务                          |
-| swms-third-party | 第三方整合服务 | 第三方服务、阿里云OSS等                               |
-| renren-fast      | 人人后台生成  | [人人开源](https://gitee.com/renrenio) 后端快速开发平台 |
-| renren-fast-vue  | 后台管理前端  | [人人开源](https://gitee.com/renrenio) 前端快速开发平台 |
+| 模块名      | 模块中文名   | 端口    |
+|----------|---------|-------|
+| swms-aus | 认证服务    | 21001 |
+| swms-cms | 公共模块    | 21002 |
+| swms-gws | 网关模块    | 21003 |
+| swms-ses | 搜索服务    | 21004 |
+| swms-tps | 第三方整合服务 | 21005 |
+| swms-dms | 设备管理服务  | 21006 |
+| swms-fms | 文件管理服务  | 21007 |

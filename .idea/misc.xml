@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/swms-gws/pom.xml" />
         <option value="$PROJECT_DIR$/swms-ses/pom.xml" />
         <option value="$PROJECT_DIR$/swms-tps/pom.xml" />
+        <option value="$PROJECT_DIR$/swms-com/pom.xml" />
       </list>
     </option>
   </component>

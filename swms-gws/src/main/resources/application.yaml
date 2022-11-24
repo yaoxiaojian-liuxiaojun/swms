@@ -1,0 +1,52 @@
+server:
+  port: 20002
+spring:
+  application:
+    name: swms-gws
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.2.17:20000
+    gateway:
+      routes:
+        - id: swms-aus
+          uri: lb://swms-aus
+          predicates:
+            - Path=/api/aus/**
+          filters:
+            - RewritePath=/api/(?<segment>.*),/$\{segment}
+
+        - id: swms-cms
+          uri: lb://swms-cms
+          predicates:
+            - Path=/api/cms/**
+          filters:
+            - RewritePath=/api/(?<segment>.*),/$\{segment}
+
+        - id: swms-dms
+          uri: lb://swms-dms
+          predicates:
+            - Path=/api/dms/**
+          filters:
+            - RewritePath=/api/(?<segment>.*),/$\{segment}
+
+        - id: swms-fms
+          uri: lb://swms-fms
+          predicates:
+            - Path=/api/fms/**
+          filters:
+            - RewritePath=/api/(?<segment>.*),/$\{segment}
+
+        - id: swms-ses
+          uri: lb://swms-ses
+          predicates:
+            - Path=/api/ses/**
+          filters:
+            - RewritePath=/api/(?<segment>.*),/$\{segment}
+
+        - id: swms-tps
+          uri: lb://swms-tps
+          predicates:
+            - Path=/api/tps/**
+          filters:
+            - RewritePath=/api/(?<segment>.*),/$\{segment}

@@ -1,0 +1,63 @@
+server:
+  port: 21007
+  additionalPorts: 21008,21009,210010,210011
+  sslPort: 210012
+#  sslConfig:
+ #   key-store:
+  #  key-store-key:
+spring:
+
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.2.170:20000
+        file-extension: yaml
+        prefix: ${spring.application.name}
+        refresh-enabled: true
+
+      discovery:
+        server-addr: 192.168.2.170:20000
+        group: swms
+
+
+  application:
+    name: fms
+
+  config:
+    activate:
+      on-profile: dev
+  servlet:
+    tempPath: /D:/
+    multipart:
+      enabled: true
+      file-size-threshold: 1MB
+      resolve-lazily: true
+      location: "${tempPath}"
+      max-file-size: 4096MB #单个文件上传大小
+      max-request-size: 409600MB #连续上传文件大小
+    singleLimit: 5
+    maxLimit: 20 #最大允许并发数MB
+    pointCloud:
+      - metadata.json
+      - hierarchy.bin
+      - octree.bin
+    pointConvert:  /D:/
+
+  redis:
+    host: 192.168.2.170
+    port: 20001
+    database: 0
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: 10000
+        max-idle: 200
+        min-idle: 0
+    timeout: 10000
+
+  data:
+    mongodb:
+      uri: mongodb://dba:12qwaszxqq@192.168.2.170:20002/swms-fms
+
+logging:
+  config: classpath:log-dev.xml

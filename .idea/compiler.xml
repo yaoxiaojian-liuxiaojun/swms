@@ -16,22 +16,23 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="swms-aus" target="1.8" />
+      <module name="swms-aus" target="8" />
       <module name="swms-auth-server" target="8" />
-      <module name="swms-cms" target="1.8" />
-      <module name="swms-com" target="1.8" />
-      <module name="swms-dms" target="1.8" />
-      <module name="swms-fms" target="1.8" />
+      <module name="swms-cms" target="8" />
+      <module name="swms-com" target="8" />
+      <module name="swms-dms" target="8" />
+      <module name="swms-fms" target="8" />
       <module name="swms-gateway" target="8" />
-      <module name="swms-gws" target="1.8" />
+      <module name="swms-gws" target="8" />
       <module name="swms-seach" target="8" />
-      <module name="swms-ses" target="1.8" />
-      <module name="swms-tps" target="1.8" />
+      <module name="swms-ses" target="8" />
+      <module name="swms-tps" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="swms-com" options="-parameters" />
+      <module name="swms-fms" options="-parameters" />
       <module name="swms-gws" options="-parameters" />
     </option>
   </component>

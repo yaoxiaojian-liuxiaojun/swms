@@ -1,3 +1,5 @@
+server:
+  port: 20002
 spring:
   application:
     name: swms-gws
@@ -48,6 +50,3 @@ spring:
             - Path=/api/tps/**
           filters:
             - RewritePath=/api/(?<segment>.*),/$\{segment}
-
-server:
-  port: 20002
